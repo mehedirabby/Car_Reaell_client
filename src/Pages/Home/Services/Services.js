@@ -4,12 +4,14 @@ import ServiceCart from "./ServiceCart";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("services.json")
+    fetch("http://localhost:5000/categories")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+
   return (
     <div>
+      {services.length}
       <div className="text-center mb-4 mt-12">
         <p className="text-2xl font-bold text-purple-600">Cetagories</p>
         <h2 className="text-5xl font-semibold">Best Car collection in BD</h2>
