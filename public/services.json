@@ -1,55 +1,175 @@
 [
-    {
-        
-        "service_id": "04",
+    {"service_id": "01",
         "title": "Private Car",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/TOYOTA_PREMIO_T260_20160704_01.jpeg/640px-TOYOTA_PREMIO_T260_20160704_01.jpeg",
+        "img": "https://www.asparkholidays.com/uploads/4371_Car%20Rental%20Service%205.jpg",
         "price": "20.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"https://garirbazar.s3.amazonaws.com/uploads/picture/url/30198/medium_with_watermark_toyota-crown-athlete-stj-frontier-dhaka-dhaka-4131.jpg",
+            "title":"Toyota Crown",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ",
+            "price":500,
+            "resellPrice":300,
+            "location":"Dhaka,Bangladesh",
+            "yearOfUse":"3",
+            "postTime":"31st june,2022",
+            "seller":"Ashik Bhuiyan"
+        },
+        "product2":{
+            "img":"https://www.topgear.com/sites/default/files/2022/09/RRS_First_Edition_P530_23MY_070922_01.jpg",
+            "title":"Range Rover 2022 premium",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ",
+            "price":1000,
+            "resellPrice":750,
+            "location":"Jatrabari,Dhaka",
+            "yearOfUse":"1",
+            "postTime":"21 August 2022",
+            "seller":"Mredha Ratan"
+        }
         
     },
-    {
-        
-        "service_id": "05",
+    {   "service_id": "02",
         "title": "Micro Bus",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Toyota_HIACE_%28H200%29_left.JPG/1280px-Toyota_HIACE_%28H200%29_left.JPG",
+        "img": "https://www.carmag.co.za/wp-content/uploads/2017/11/House-fathermother_01.jpg",
         "price": "20.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        },
+        "product2":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        }
         
     },
-    {
-        
-        "service_id": "01",
-        "title": "Ambulance",
-        "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/2C9A/production/_121781411_68298c43-55b6-48f8-b01c-3d13e1f69ff7.jpg",
+    {   "service_id": "03",
+        "title": "Bikes",
+        "img": "https://bd.gaadicdn.com/processedimages/suzuki/hayabusa/640X309/hayabusa614d56bddfc73.jpg",
         "price": "200.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        },
+        "product2":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        }
        
     },
-    {
-        
-        "service_id": "02",
+    {   "service_id": "04",
         "title": "Truck",
-        "img": "https://cms.eichertrucksandbuses.com/uploads/truck/exterior/eab6791833e7f758054d8742d6c3ede1.jpg",
+        "img": "https://prod-media-eng.dhakatribune.com/uploads/2021/09/truck-stand-1632133689649.jpg",
         "price": "150.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        },
+        "product2":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        }
         
     },
-    {
-        
-        "service_id": "03",
+    {   "service_id": "05",
         "title": "Bus",
-        "img": "https://mms.businesswire.com/media/20200831005698/en/817196/5/Exterior_%281%29.jpg",
+        "img": "https://gumlet.assettype.com/bdnews24-english%2Fimport%2Fmedia%2F2022%2F04%2F15%2Fbus-repairing-eid-ul-fitr-160422-09.jpg",
         "price": "30.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        },
+        "product2":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        }
        
     },
-    {
-        
-        "service_id": "06",
+    {   "service_id": "06",
         "title": "Pick Up",
-        "img": "https://images.carandbike.com/car-images/large/mahindra/bolero-pik-up/mahindra-bolero-pik-up.jpg?v=11",
+        "img": "https://professionalpickup.com/wp-content/uploads/2018/08/Ford-F-150-VelociRaptor-Profile-6x6-2021-Professional-Pickup.jpg",
         "price": "20.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "product1":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        },
+        "product2":{
+            "img":"",
+            "title":"",
+            "description":"",
+            "price":"",
+            "resellPrice":"",
+            "location":"",
+            "yearOfUse":"",
+            "postTime":"",
+            "seller":""
+        }
     }
 ]
