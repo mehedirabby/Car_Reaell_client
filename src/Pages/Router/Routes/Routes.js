@@ -1,4 +1,5 @@
 import Main from "../../../Layout/Main";
+import Dashboard from "../../DashBoard/Dashboard";
 import Home from "../../Home/Home/Home";
 import Login from "../../Login/Login";
 import SignUp from "../../Login/SignUp/Signup";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>,
       },
       {
         path: "/products/:id",

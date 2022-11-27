@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 
 const SignUp = () => {
@@ -10,20 +10,37 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { createUser } = useContext(AuthContext);
-  const handleSignup = (data) => {
-    console.log(data);
-    createUser(data.email, data.password).then((result) => {
-      const user = result.user;
-      console.log(user);
-    });
+  const { createUser, updateUser } = useContext(AuthContext);
+  const [signUpError, setSignUPError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSignUp = (data) => {
+    setSignUPError("");
+    createUser(data.email, data.password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        alert("user created succesfully");
+        const userInfo = {
+          displayName: data.name,
+        };
+        updateUser(userInfo)
+          .then(() => {
+            navigate("/");
+          })
+          .catch((err) => console.log(err));
+      })
+      .catch((error) => {
+        console.log(error);
+        setSignUPError(error.message);
+      });
   };
 
   return (
     <div className="h-[800px] flex justify-center items-center">
       <div className="w-96 p-7">
         <h2 className="text-xl text-center">Sign Up</h2>
-        <form onSubmit={handleSubmit(handleSignup)}>
+        <form onSubmit={handleSubmit(handleSignUp)}>
           <div className="form-control w-full max-w-xs">
             <label className="label">
               {" "}
@@ -86,6 +103,7 @@ const SignUp = () => {
             value="Sign Up"
             type="submit"
           />
+          {signUpError && <p className="text-red-600">{signUpError}</p>}
         </form>
         <p>
           Already have an account{" "}

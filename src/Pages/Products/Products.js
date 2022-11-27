@@ -75,7 +75,11 @@ const Products = () => {
                 Book Now
               </label>
               {items && (
-                <BookingModal book={book} products={products}></BookingModal>
+                <BookingModal
+                  setBook={setBook}
+                  book={book}
+                  products={products}
+                ></BookingModal>
               )}
             </div>
             <p>

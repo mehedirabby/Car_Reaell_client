@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 const BookingModal = ({ products }) => {
-  const { items, slots } = products;
+  const { items, slots, setBook } = products;
   const { product2 } = items;
+  const { user } = useContext(AuthContext);
   const handleBooking = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
+    const time = form.time.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const slot = form.slot.value;
+    const booking = {
+      customerName: name,
+      AppointmentDate: time,
+      email,
+      phone,
+      slot,
+    };
+
+    fetch("http://localhost:5000/bookings", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.acknowledge) {
+          alert("Booking Confirmed");
+        }
+      });
   };
 
   // treatment is just another name of appointmentOptions with name, slots, _id
@@ -34,21 +62,27 @@ const BookingModal = ({ products }) => {
               name="time"
             />
             <select name="slot" className="select select-bordered w-full">
-              {slots.map((slot) => (
-                <option>{slot}</option>
+              {slots.map((slot, i) => (
+                <option value={slot} key={i}>
+                  {slot}
+                </option>
               ))}
             </select>
             <input
               name="name"
               type="text"
               placeholder="Your Name"
+              defaultValue={user?.displayName}
               className="input w-full input-bordered"
+              disabled
             />
             <input
               name="email"
               type="email"
+              defaultValue={user?.email}
               placeholder="Email Address"
               className="input w-full input-bordered"
+              disabled
             />
             <input
               name="phone"
