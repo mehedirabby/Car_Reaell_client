@@ -15,6 +15,7 @@ const BookingModal = ({ products }) => {
     const title = product2?.title;
     const img = product2?.img;
     const price = product2?.price;
+
     const booking = {
       customerName: name,
       AppointmentDate: time,
@@ -24,6 +25,7 @@ const BookingModal = ({ products }) => {
       title,
       img,
       price,
+      time,
     };
 
     fetch("http://localhost:5000/bookings", {

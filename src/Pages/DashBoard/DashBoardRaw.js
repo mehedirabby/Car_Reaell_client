@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const DashBoardRaw = ({ booking }) => {
-  const { title, price, email, img } = booking;
+  const { title, price, email, img, time, phone } = booking;
+
   return (
     <tr>
       <th>
@@ -19,7 +20,7 @@ const DashBoardRaw = ({ booking }) => {
           </div>
           <div>
             <div className="font-bold">{title}</div>
-            <div className="text-sm opacity-50"></div>
+            <div className="text-sm opacity-50">{phone}</div>
           </div>
         </div>
       </td>
@@ -28,8 +29,9 @@ const DashBoardRaw = ({ booking }) => {
         <span className="badge badge-ghost badge-sm">${price}</span>
       </td>
       <td>{email}</td>
+      <td>{time}</td>
       <th>
-        <button className="btn btn-ghost btn-xs"></button>
+        <button className="btn btn-ghost btn-xs">Pending</button>
       </th>
     </tr>
   );
