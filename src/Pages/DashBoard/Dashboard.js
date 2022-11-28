@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
+import DashBoardRaw from "./DashBoardRaw";
 
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
@@ -24,7 +25,11 @@ const Dashboard = () => {
               <th></th>
             </tr>
           </thead>
-          <tbody>{/* main khela */}</tbody>
+          <tbody>
+            {bookings.map((booking) => (
+              <DashBoardRaw key={booking._id} booking={booking}></DashBoardRaw>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>

@@ -12,12 +12,18 @@ const BookingModal = ({ products }) => {
     const email = form.email.value;
     const phone = form.phone.value;
     const slot = form.slot.value;
+    const title = product2?.title;
+    const img = product2?.img;
+    const price = product2?.price;
     const booking = {
       customerName: name,
       AppointmentDate: time,
       email,
       phone,
       slot,
+      title,
+      img,
+      price,
     };
 
     fetch("http://localhost:5000/bookings", {
