@@ -16,7 +16,9 @@ const Navbar = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-
+      <li>
+        <Link to="/appointment">Appointment</Link>
+      </li>
       <li>
         <Link to="/about">About</Link>
       </li>
@@ -26,9 +28,6 @@ const Navbar = () => {
             <Link to="/mybookings">My Bookings</Link>
           </li>
 
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
           <li>
             <button onClick={handleLogOut}>Sign out</button>
           </li>
@@ -40,6 +39,7 @@ const Navbar = () => {
       )}
     </React.Fragment>
   );
+
   return (
     <div className="navbar bg-base-100 flex justify-between">
       <div className="navbar-start">
@@ -67,14 +67,18 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost normal-case text-xl">
-          Resell your Engines
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          Car Resell and rent
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
-      <label tabIndex={2} className="btn btn-ghost lg:hidden">
+      <label
+        htmlFor="dashboard-drawer"
+        tabIndex={2}
+        className="btn btn-ghost lg:hidden"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"

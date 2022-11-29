@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-
 const DashBoardRaw = ({ booking }) => {
-  const { title, price, email, img, time, phone } = booking;
+  const { title, email, img, phone, time, slot } = booking;
 
   return (
     <tr>
@@ -25,14 +23,17 @@ const DashBoardRaw = ({ booking }) => {
         </div>
       </td>
       <td>
-        <br />
-        <span className="badge badge-ghost badge-sm">${price}</span>
+        <span className="font-semibold">{email}</span>
       </td>
-      <td>{email}</td>
-      <td>{time}</td>
-      <th>
-        <button className="btn btn-ghost btn-xs">Pending</button>
-      </th>
+      <td>
+        <div>{time}</div>
+        <p>
+          <small>{slot}</small>
+        </p>
+      </td>
+      <td>
+        <button className="btn btn-xs btn-error">Delete</button>
+      </td>
     </tr>
   );
 };

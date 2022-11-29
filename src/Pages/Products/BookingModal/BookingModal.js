@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import toast from "react-hot-toast";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 const BookingModal = ({ products }) => {
   const { items, slots, setBook } = products;
@@ -39,7 +40,7 @@ const BookingModal = ({ products }) => {
       .then((data) => {
         console.log(data);
         if (data.acknowledge) {
-          alert("Booking Confirmed");
+          toast.apply("Booking confirmed");
         }
       });
   };

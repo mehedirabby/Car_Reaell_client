@@ -12,6 +12,7 @@ const SignUp = () => {
   } = useForm();
   const { createUser, updateUser } = useContext(AuthContext);
   const [signUpError, setSignUPError] = useState("");
+  const [createdUserEmail, setCreatedUserEmail] = useState("");
   const navigate = useNavigate();
 
   const handleSignUp = (data) => {
@@ -26,7 +27,7 @@ const SignUp = () => {
         };
         updateUser(userInfo)
           .then(() => {
-            navigate("/");
+            saveUser(data.email, data.name);
           })
           .catch((err) => console.log(err));
       })
@@ -36,6 +37,20 @@ const SignUp = () => {
       });
   };
 
+  const saveUser = (name, email) => {
+    const user = { name, email };
+    fetch("http://localhost:5000/users", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setCreatedUserEmail(email);
+      });
+  };
   return (
     <div className="h-[800px] flex justify-center items-center">
       <div className="w-96 p-7">

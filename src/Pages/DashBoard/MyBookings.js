@@ -19,12 +19,11 @@ const MyBookings = () => {
         <table className="table w-full">
           <thead>
             <tr>
-              <th></th>
+              <th>{}</th>
               <th>Name</th>
-              <th>Price</th>
               <th>Email</th>
-              <th>Booking Time</th>
-              <th>Update Time</th>
+              <th>Time</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>

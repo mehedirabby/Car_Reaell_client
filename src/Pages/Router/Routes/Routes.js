@@ -1,14 +1,13 @@
 import DashBoardLayout from "../../../Layout/DashBoardLayout";
 import Main from "../../../Layout/Main";
-import Dashboard from "../../DashBoard/Dashboard";
-
-import MyBookings from "../../DashBoard/MyBookings";
 
 import Home from "../../Home/Home/Home";
 import Login from "../../Login/Login";
 import SignUp from "../../Login/SignUp/Signup";
 import Products from "../../Products/Products";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import MyBookings from "../../DashBoard/MyBookings";
+import MyAppointment from "../../DashBoard/MyAppointment/MyAppointment";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -33,6 +32,7 @@ const router = createBrowserRouter([
         path: "/mybookings",
         element: <MyBookings></MyBookings>,
       },
+
       {
         path: "/products/:id",
         element: (
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: <MyAppointment></MyAppointment>,
       },
     ],
   },
