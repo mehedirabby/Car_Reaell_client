@@ -1,11 +1,13 @@
-const DashBoardRaw = ({ booking }) => {
-  const { title, email, img, phone, time, slot } = booking;
+const DashBoardRaw = ({ booking, handleDelete, handleStatusUpdate }) => {
+  const { title, email, img, phone, time, slot, _id, status } = booking;
 
   return (
     <tr>
       <th>
         <label>
-          <button className="btn btn-ghost">X</button>
+          <button onClick={() => handleDelete(_id)} className="btn btn-error">
+            X
+          </button>
         </label>
       </th>
       <td>
@@ -18,12 +20,12 @@ const DashBoardRaw = ({ booking }) => {
           </div>
           <div>
             <div className="font-bold">{title}</div>
-            <div className="text-sm opacity-50">{phone}</div>
           </div>
         </div>
       </td>
       <td>
         <span className="font-semibold">{email}</span>
+        <div className="text-sm opacity-50">{phone}</div>
       </td>
       <td>
         <div>{time}</div>
@@ -32,7 +34,12 @@ const DashBoardRaw = ({ booking }) => {
         </p>
       </td>
       <td>
-        <button className="btn btn-xs btn-error">Delete</button>
+        <button
+          onClick={() => handleStatusUpdate(_id)}
+          className="btn btn-xs btn-info"
+        >
+          {status ? status : "pending"}
+        </button>
       </td>
     </tr>
   );

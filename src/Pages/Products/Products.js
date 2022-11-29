@@ -26,24 +26,24 @@ const Products = () => {
               </small>
             </p>
             <p className="font-semibold">
-              <small>Seller: {product1?.seller}</small>
+              <small>Driver: {product1?.seller}</small>
             </p>
             <h2 className="card-title">{product1?.title}</h2>
             <p className="text-xl text-orange-600 font-semibold">
-              Price: ${product1?.price}
+              Price: ${product1?.price} per Hour
             </p>
-            <p className="text-2xl text-info">
+            {/* <p className="text-2xl text-info">
               Re-sell Price:${product1?.resellPrice}
-            </p>
+            </p> */}
 
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal" className="btn btn-primary">
                 Book Now
               </label>
             </div>
-            <p>
+            {/* <p>
               <small>Post Time:{product1?.postTime}</small>
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -57,15 +57,15 @@ const Products = () => {
               </small>
             </p>
             <p className="font-semibold">
-              <small>Seller: {product2?.seller}</small>
+              <small>Driver: {product2?.seller}</small>
             </p>
             <h2 className="card-title">{items.product2?.title}</h2>
             <p className="text-xl text-orange-600 font-semibold">
-              Price: ${product2?.price}
+              Price: ${product2?.price} per Hour
             </p>
-            <p className="text-2xl text-info">
+            {/* <p className="text-2xl text-info">
               Re-sell Price:${product2?.resellPrice}
-            </p>
+            </p> */}
             <div className="card-actions justify-end">
               <label
                 htmlFor="booking-modal"
