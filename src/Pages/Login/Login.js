@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
-import useToken from "../../hooks/useHooks";
+import useToken from "../../hooks/useToken";
 
 const Login = () => {
   const {

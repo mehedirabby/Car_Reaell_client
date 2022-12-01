@@ -1,18 +1,25 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import React, { useContext } from "react";
 
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 
 const MyAppointment = () => {
-  const [bookings, setBookings] = useState([]);
   const { user } = useContext(AuthContext);
-  useEffect(() => {
-    fetch(`http://localhost:5000/bookings`)
-      .then((res) => res.json())
-      .then((data) => {
-        setBookings(data);
-        console.log(data);
+
+  const url = `http://localhost:5000/bookings?email=${user?.email}`;
+
+  const { data: bookings = [] } = useQuery({
+    queryKey: ["bookings", user?.email],
+    queryFn: async () => {
+      const res = await fetch(url, {
+        headers: {
+          authorization: `bearer ${localStorage.getItem("accessToken")}`,
+        },
       });
-  }, []);
+      const data = await res.json();
+      return data;
+    },
+  });
 
   return (
     <div>
