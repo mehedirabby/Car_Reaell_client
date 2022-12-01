@@ -27,6 +27,9 @@ const Navbar = () => {
           <li>
             <Link to="/mybookings">My Bookings</Link>
           </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
 
           <li>
             <button onClick={handleLogOut}>Sign out</button>

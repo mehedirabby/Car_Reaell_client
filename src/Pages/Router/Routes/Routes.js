@@ -8,6 +8,7 @@ import Products from "../../Products/Products";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyBookings from "../../DashBoard/MyBookings";
 import MyAppointment from "../../DashBoard/MyAppointment/MyAppointment";
+import Allusers from "../../DashBoard/Allusers/Allusers";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <MyAppointment></MyAppointment>,
+      },
+      {
+        path: "/dashboard/allusers",
+        element: <Allusers></Allusers>,
       },
     ],
   },

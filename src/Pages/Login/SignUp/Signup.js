@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link /*useNavigate*/, Navigate } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 
 const SignUp = () => {
@@ -12,8 +12,8 @@ const SignUp = () => {
   } = useForm();
   const { createUser, updateUser } = useContext(AuthContext);
   const [signUpError, setSignUPError] = useState("");
-  const [createdUserEmail, setCreatedUserEmail] = useState("");
-  const navigate = useNavigate();
+  const [userEmail, setCreatedUserEmail] = useState("");
+  // const navigate = useNavigate();
 
   const handleSignUp = (data) => {
     setSignUPError("");
@@ -27,7 +27,7 @@ const SignUp = () => {
         };
         updateUser(userInfo)
           .then(() => {
-            saveUser(data.email, data.name);
+            saveStoredUser(data.name, data.email);
           })
           .catch((err) => console.log(err));
       })
@@ -37,7 +37,7 @@ const SignUp = () => {
       });
   };
 
-  const saveUser = (name, email) => {
+  const saveStoredUser = (name, email) => {
     const user = { name, email };
     fetch("http://localhost:5000/users", {
       method: "POST",
@@ -48,7 +48,8 @@ const SignUp = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        setCreatedUserEmail(email);
+        console.log("save user", data);
+        Navigate("/");
       });
   };
   return (
