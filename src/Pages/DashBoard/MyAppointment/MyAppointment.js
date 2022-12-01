@@ -6,14 +6,17 @@ const MyAppointment = () => {
   const [bookings, setBookings] = useState([]);
   const { user } = useContext(AuthContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/bookings?email=${user?.email}`)
+    fetch(`http://localhost:5000/bookings`)
       .then((res) => res.json())
-      .then((data) => setBookings(data));
-  }, [user?.email]);
+      .then((data) => {
+        setBookings(data);
+        console.log(data);
+      });
+  }, []);
 
   return (
     <div>
-      <h3 className="text-3xl mb-5">My Appointments</h3>
+      <h3 className="text-3xl mb-5">All Bookings</h3>
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>
@@ -31,8 +34,8 @@ const MyAppointment = () => {
                 <tr key={booking._id}>
                   <th>{i + 1}</th>
                   <td>{booking.title}</td>
-                  <td>{booking.treatment}</td>
-                  <td>{booking.appointmentDate}</td>
+                  <td>{booking.email}</td>
+                  <td>{booking.AppointmentDate}</td>
                   <td>{booking.slot}</td>
                 </tr>
               ))}

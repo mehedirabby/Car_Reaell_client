@@ -1,7 +1,9 @@
+// http://localhost:5000/users
+// http://localhost:5000/jwt?email=${email}
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { Link /*useNavigate*/, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 
 const SignUp = () => {
@@ -13,7 +15,7 @@ const SignUp = () => {
   const { createUser, updateUser } = useContext(AuthContext);
   const [signUpError, setSignUPError] = useState("");
   const [userEmail, setCreatedUserEmail] = useState("");
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSignUp = (data) => {
     setSignUPError("");
@@ -49,7 +51,17 @@ const SignUp = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("save user", data);
-        Navigate("/");
+        getUserToken(email);
+      });
+  };
+  const getUserToken = (email) => {
+    fetch(`http://localhost:5000/jwt?email=${email}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.accessToken) {
+          localStorage.setItem("accessToken", data.accessToken);
+          navigate("/");
+        }
       });
   };
   return (
