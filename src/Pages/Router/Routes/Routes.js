@@ -9,6 +9,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyBookings from "../../DashBoard/MyBookings";
 import MyAppointment from "../../DashBoard/MyAppointment/MyAppointment";
 import Allusers from "../../DashBoard/Allusers/Allusers";
+import errorImage from "../../../assets/images/errorImage.jpg";
 
 import Blogs from "../../Blogs/Blogs";
 import DashboardPage from "../../DashboardPage/DashboardPage";
@@ -73,6 +74,14 @@ const router = createBrowserRouter([
         path: "/dashboard/addAproduct",
       },
     ],
+  },
+  {
+    path: "*",
+    element: (
+      <div>
+        <img src={errorImage} alt="" />
+      </div>
+    ),
   },
 ]);
 

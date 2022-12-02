@@ -84,18 +84,14 @@ const Login = () => {
               <p className="text-red-600">{errors.password?.message}</p>
             )}
           </div>
-          <input
-            className="btn btn-accent w-full"
-            value="Login"
-            type="submit"
-          />
+          <input className="btn btn-info w-full" value="Login" type="submit" />
           <div>
             {loginError && <p className="text-red-600">{loginError}</p>}
           </div>
         </form>
         <p>
-          New to Doctors Portal{" "}
-          <Link className="text-secondary" to="/signup">
+          New to Car Resell?{" "}
+          <Link className="text-primary" to="/signup">
             Create new Account
           </Link>
         </p>
