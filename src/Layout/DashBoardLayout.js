@@ -1,13 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider/AuthProvider";
-import useAdmin from "../hooks/useAdmin";
+
 import Navbar from "../Pages/Shared/Navbar/Navbar";
 
 const DashBoardLayout = () => {
   const { user } = useContext(AuthContext);
+  const [savedUser, setSavedUser] = useState(null);
+  const email = user.email;
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/${email}`)
+      .then((res) => res.json())
+      .then((data) => setSavedUser(data));
+  }, [email]);
 
-  const [isAdmin] = useAdmin(user?.email);
   return (
     <div>
       <Navbar></Navbar>
@@ -23,13 +29,30 @@ const DashBoardLayout = () => {
         <div className="drawer-side">
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 bg-base-100 text-base-content">
-            {isAdmin && (
+            {savedUser?.role === "admin" && (
               <>
                 <li>
-                  <Link to="/dashboard">Dashboard</Link>
+                  <Link to="/dashboard/allbuyers">All Buyers</Link>
                 </li>
                 <li>
-                  <Link to="/dashboard/allusers">All users</Link>
+                  <Link to="/dashboard/allbuyers">All Sellers</Link>
+                </li>
+              </>
+            )}
+            {savedUser?.role === "Buyer" && (
+              <>
+                <li>
+                  <Link to="/dashboard/mybookings">My Bookings</Link>
+                </li>
+              </>
+            )}
+            {savedUser?.role === "Seller" && (
+              <>
+                <li>
+                  <Link to="/dashboard/addAproduct">Add a Product</Link>
+                </li>
+                <li>
+                  <Link to="/dashboard/mybookings">My Products</Link>
                 </li>
               </>
             )}

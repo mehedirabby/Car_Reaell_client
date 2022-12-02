@@ -9,7 +9,9 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyBookings from "../../DashBoard/MyBookings";
 import MyAppointment from "../../DashBoard/MyAppointment/MyAppointment";
 import Allusers from "../../DashBoard/Allusers/Allusers";
-import AdminRoute from "../AdminRoute/AdminRoute";
+
+import Blogs from "../../Blogs/Blogs";
+import DashboardPage from "../../DashboardPage/DashboardPage";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -27,11 +29,15 @@ const router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
+      },
+      {
         path: "/signup",
         element: <SignUp></SignUp>,
       },
       {
-        path: "/mybookings",
+        path: "/dashboard/mybookings",
         element: <MyBookings></MyBookings>,
       },
 
@@ -57,16 +63,14 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <MyAppointment></MyAppointment>,
+        element: <DashboardPage></DashboardPage>,
       },
       {
-        path: "/dashboard/allusers",
-        element: (
-          <AdminRoute>
-            {" "}
-            <Allusers></Allusers>
-          </AdminRoute>
-        ),
+        path: "/dashboard/allbuyers",
+        element: <Allusers></Allusers>,
+      },
+      {
+        path: "/dashboard/addAproduct",
       },
     ],
   },

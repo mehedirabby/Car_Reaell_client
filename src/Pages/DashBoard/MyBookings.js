@@ -12,6 +12,7 @@ const MyBookings = () => {
       .then((data) => setBookings(data));
   }, [user?.email]);
   console.log(bookings);
+
   const handleDelete = (id) => {
     const proceed = window.confirm(
       "Are You Sure , You want to cancel this order"
