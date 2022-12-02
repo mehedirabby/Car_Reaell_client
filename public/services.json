@@ -3,55 +3,54 @@
         "service_id": "01",
         "title": "Toyota Premio",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/TOYOTA_PREMIO_T260_20160704_01.jpeg/640px-TOYOTA_PREMIO_T260_20160704_01.jpeg",
-        "price": "20.00",
+        "price": "215",
+        "sellerEmail":"abul@gmail.com",
+        "userIn":"2 years",
         "description": "The Toyota Premio (Japanese: トヨタ・プレミオ, Toyota Puremio) and its twin the Toyota Allion (Japanese: トヨタ・アリオン, Toyota Arion) are sedans sold in Japan from 2001 to 2021 by Toyota. The sedans are designated as a compact car by Japanese dimension regulations and the exterior dimensions do not change with periodic updates. Unlike Toyota's other vehicles, the Premio and Allion are not exported, and are exclusively sold in Japan only. Size and pricing-wise, the E210 Corolla, introduced to the Japanese market in 2018 succeeds the Premio and Allion."
     },
     {
         "service_id": "02",
-        "title": "Toyota corolla X",
+        "title": "Hyundai Civic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/8/89/2019_Toyota_Corolla_Design_VVT-i_HEV_1.8_Front.jpg",
-        "price": "20.00",
+        "price": "800",
+        "sellerEmail":"kafi@gmail.com",
+        "userIn":"4 years",
         "description": "The Toyota Corolla (Japanese: トヨタ・カローラ, Hepburn: Toyota Karōra) is a series of compact cars (formerly subcompact) manufactured and marketed globally by the Toyota Motor Corporation. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then. In 1997, the Corolla became the best-selling nameplate in the world, surpassing the Volkswagen Beetle.[1] Toyota reached the milestone of 50 million Corollas sold over twelve generations in 2021."
     },
     {
         "service_id": "03",
-        "title": "Toyota Noah",
+        "title": "Noah",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2018_Toyota_Noah_X_%28facelift%29.jpg",
-        "price": "20.00",
+        "price": "600",
+        "sellerEmail":"jihad@gmail.com",
+        "userIn":"5 years",
         "description": "The Toyota Noah (Japanese: トヨタ・ノア, Hepburn: Toyota Noa) is a minivan with two rear sliding doors built by Toyota and sold mainly in Asian countries. It is positioned below the Estima and Alphard, and above the Sienta. Being a front-wheel drive-based vehicle, it replaces the rear-wheel drive-based TownAce/LiteAce Noah, while retaining the 'R' model code series and generation numbering. Its twin version, named the Toyota Voxy (Japanese: トヨタ・ヴォクシー, Hepburn: Toyota Vokushī), is marketed as the sportier version of the Noah, featuring split-type headlights and clear taillight lens. In the third generation, another twin version was also available, named the Toyota Esquire (Japanese: トヨタ・エスクァイア, Hepburn: Toyota Esukwaia)."
     },
     {
         "service_id": "04",
-        "title": "Honda Accord",
+        "title": "Honda s6",
         "img": "https://upload.wikimedia.org/wikipedia/commons/2/27/Honda_Accord_%28CV3%29_EX_eHEV%2C_2021%2C_front.jpg",
-        "price": "20.00",
+        "price": "350",
+        "sellerEmail":"fayezz@gmail.com",
+        "userIn":"1 years",
         "description": "The Honda Accord (Japanese: ホンダ・アコード, Hepburn: Honda Akōdo, /əˈkɔːrd/), also known as the Honda Inspire (Japanese: ホンダ・インスパイア, Hepburn: Honda Insupaia) in Japan and China for certain generations, is a series of cars manufactured by Honda since 1976, best known for its four-door sedan variant, which has been one of the best-selling cars in the United States since 1989. The Accord nameplate has been applied to a variety of vehicles worldwide, including coupes, station wagons, hatchbacks and a Honda Crosstour crossover."
     },
     {
         "service_id": "05",
-        "title": "Honda Insight",
+        "title": "Haice XXXL",
         "img": "https://upload.wikimedia.org/wikipedia/commons/c/cc/2010_Honda_Insight_LX_--_10-03-2009.jpg",
-        "price": "20.00",
+        "price": "200",
+        "sellerEmail":"Noyon@gmail.com",
+        "userIn":"3 years",
         "description": "The Honda Insight (ホンダ・インサイト, Honda Insaito) is a hybrid electric vehicle that is manufactured and marketed by Honda. Its first generation was a two-door, two passenger liftback (1999–2006) and in its second generation was a four-door, five passenger liftback (2009–2014). In its third generation, it became a four-door sedan (2019–present). It was Honda's first model with Integrated Motor Assist system and the most fuel efficient gasoline-powered car available in the U.S. without plug-in capability — for the length of its production run."},
         {
             "service_id": "06",
-            "title": "Haice XXL",
+            "title": "Pick up",
             "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Toyota_HIACE_%28H200%29_left.JPG/1280px-Toyota_HIACE_%28H200%29_left.JPG",
-            "price": "20.00",
+            "price": "980",
+            "sellerEmail":"xyz@gmail.com",
+            "userIn":"5 years",
             "description": "The Toyota HiAce (Japanese: トヨタ・ハイエース, Hepburn: Toyota Haiēsu) (pronounced 'High Ace') is a light commercial vehicle produced by the Japanese automobile manufacturer Toyota. First launched in October 1967, the HiAce has since been available in a wide range of body configurations, including a minivan/MPV, minibus, panel van, crew van, pickup truck, taxi and an ambulance. In Japan, the HiAce is exclusive to Toyopet Store locations."
-        },
-        {
-            "service_id": "07",
-            "title": "Ambulance",
-            "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/2C9A/production/_121781411_68298c43-55b6-48f8-b01c-3d13e1f69ff7.jpg",
-            "price": "200.00",
-            "description": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals.[1] Typically, out-of-hospital medical care is provided to the patient during the transport.Ambulances are used to respond to medical emergencies by emergency medical services (EMS). For this purpose, they are generally equipped with flashing warning lights and sirens. They can rapidly transport paramedics and other first responders to the scene, carry equipment for administering emergency care and transport patients to hospital or other definitive care. Most ambulances use a design based on vans or pickup trucks. Others take the form of motorcycles, buses, limousines, aircraft and boats."
-        },
-        {
-            "service_id": "08",
-            "title": "Pick Up",
-            "img": "https://images.carandbike.com/car-images/large/mahindra/bolero-pik-up/mahindra-bolero-pik-up.jpg?v=11",
-            "price": "20.00",
-            "description": "A pickup truck or pickup is a light-duty truck that has an enclosed cabin, and a back end made up of a cargo bed that is enclosed by three low walls with no roof (this cargo bed back end sometimes consists of a tailgate and removable covering).[1] In Australia and New Zealand, both pickups and coupé utilities are called utes, short for utility vehicle. In South Africa, people of all language groups use the term bakkie, a diminutive of bak, Afrikaans for 'basket'."
         }
+       
     ]

@@ -55,7 +55,6 @@ const MyBookings = () => {
   };
   return (
     <div>
-      <h2 className="text-5xl">You have {bookings.length} Orders</h2>
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
           <thead>

@@ -26,11 +26,12 @@ const Products = () => {
               </small>
             </p>
             <p className="font-semibold">
-              <small>Driver: {product1?.seller}</small>
+              <small>Seller: {product1?.seller}</small>
             </p>
+            <p>Years Of use :{product1.yearOfUse} Years</p>
             <h2 className="card-title">{product1?.title}</h2>
             <p className="text-xl text-orange-600 font-semibold">
-              Price: ${product1?.price} per Hour
+              Price: ${product1?.price}
             </p>
             <p className="text-2xl text-info">
               Re-sell Price:${product1?.resellPrice}
@@ -57,12 +58,13 @@ const Products = () => {
               </small>
             </p>
             <p className="font-semibold">
-              <small>Driver: {product2?.seller}</small>
+              <small>Seller: {product2?.seller}</small>
             </p>
             <h2 className="card-title">{items.product2?.title}</h2>
             <p className="text-xl text-orange-600 font-semibold">
-              Price: ${product2?.price} per Hour
+              Price: ${product2?.price}
             </p>
+            <p>Years Of use :{product2.yearOfUse} Years</p>
             <p className="text-2xl text-info">
               Re-sell Price:${product2?.resellPrice}
             </p>

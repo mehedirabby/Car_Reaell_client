@@ -13,6 +13,7 @@ import errorImage from "../../../assets/images/errorImage.jpg";
 
 import Blogs from "../../Blogs/Blogs";
 import DashboardPage from "../../DashboardPage/DashboardPage";
+import AddProducts from "../../DashBoard/AddProducts";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -36,10 +37,6 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
-      },
-      {
-        path: "/dashboard/mybookings",
-        element: <MyBookings></MyBookings>,
       },
 
       {
@@ -67,11 +64,16 @@ const router = createBrowserRouter([
         element: <DashboardPage></DashboardPage>,
       },
       {
+        path: "/dashboard/mybookings",
+        element: <MyBookings></MyBookings>,
+      },
+      {
         path: "/dashboard/allbuyers",
         element: <Allusers></Allusers>,
       },
       {
         path: "/dashboard/addAproduct",
+        element: <AddProducts></AddProducts>,
       },
     ],
   },
