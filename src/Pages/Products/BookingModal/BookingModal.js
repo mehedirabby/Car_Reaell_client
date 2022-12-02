@@ -29,7 +29,7 @@ const BookingModal = ({ products }) => {
       time,
     };
 
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://car-rent-server-two.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

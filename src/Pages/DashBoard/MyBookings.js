@@ -7,7 +7,9 @@ const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/bookings?email=${user?.email}`)
+    fetch(
+      `https://car-rent-server-two.vercel.app/bookings?email=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, [user?.email]);
@@ -18,7 +20,7 @@ const MyBookings = () => {
       "Are You Sure , You want to cancel this order"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/bookings/${id}`, {
+      fetch(`https://car-rent-server-two.vercel.app/bookings/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -33,7 +35,7 @@ const MyBookings = () => {
     }
   };
   const handleStatusUpdate = (id) => {
-    fetch(`http://localhost:5000/bookings/${id}`, {
+    fetch(`https://car-rent-server-two.vercel.app/bookings/${id}`, {
       method: "PATCH",
       header: {
         "content-type": "application/json",

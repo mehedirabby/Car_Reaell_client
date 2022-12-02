@@ -1,5 +1,4 @@
-// http://localhost:5000/users
-// http://localhost:5000/jwt?email=${email}
+import { GoogleAuthProvider } from "firebase/auth";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -13,7 +12,7 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { createUser, updateUser } = useContext(AuthContext);
+  const { createUser, updateUser, providerLogin } = useContext(AuthContext);
   const [signUpError, setSignUPError] = useState("");
   const [userEmail, setCreatedUserEmail] = useState("");
 
@@ -48,7 +47,7 @@ const SignUp = () => {
 
   const saveStoredUser = (name, role, email) => {
     const user = { name, role, email };
-    fetch("http://localhost:5000/users", {
+    fetch("https://car-rent-server-two.vercel.app/users", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -60,6 +59,15 @@ const SignUp = () => {
         console.log("save user", data);
         setCreatedUserEmail(email);
       });
+  };
+  const googleProvider = new GoogleAuthProvider();
+  const handleGoogleSignIn = () => {
+    providerLogin(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((err) => console.log("error", err));
   };
 
   return (
@@ -154,7 +162,9 @@ const SignUp = () => {
           </Link>
         </p>
         <div className="divider">OR</div>
-        <button className="btn btn-outline w-full">CONTINUE WITH GOOGLE</button>
+        <button onClick={handleGoogleSignIn} className="btn btn-outline w-full">
+          CONTINUE WITH GOOGLE
+        </button>
       </div>
     </div>
   );

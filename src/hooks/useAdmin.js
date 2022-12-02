@@ -8,7 +8,7 @@ const useAdmin = () => {
   //   const [isAdmin, setIsAdmin] = useState(false);
   //   const [isAdminLoading, setIsAdminLoading] = useState(true);
   //   useEffect(() => {
-  //     fetch(`http://localhost:5000/users/${email}`)
+  //     fetch(`https://car-rent-server-two.vercel.app/users/${email}`)
   //       .then((res) => res.json())
   //       .then((data) => isAdmin(data));
   //   }, [email]);
